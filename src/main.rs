@@ -1,6 +1,8 @@
 use rustyline::error::ReadlineError;
 use rustyline::{DefaultEditor, Result};
 
+mod parser;
+
 fn main() -> Result<()> {
     let mut rl = DefaultEditor::new()?;
     loop {
